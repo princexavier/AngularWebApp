@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <li [routerLink]="['/followers',follower.id,follower.login]" 
+    class="list-group-item" *ngFor="let follower of followers"
+    [queryParams]="{order : 'newst',page:1}"
+    >
+        {{follower.login}}
+
+    </li>
+</ul>
